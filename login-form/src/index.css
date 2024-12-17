@@ -128,3 +128,49 @@ background: #bfb3f2;
   pointer-events: none;
   transform: translateY(-50%);
 }
+
+.login-form .input-wrapper .input-field:focus ~ i{
+  color: #5f41e4;
+}
+
+.login-form .forgot-pass-link {
+  display: block;
+  width: fit-content;
+  margin-top: -0.46rem;
+}
+
+
+.login-form .login-button {
+  width: 100%;
+  outline: none;
+  height: 54px;
+  color: #fff;
+  background: #5f41e4;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+  margin-top: 2.19rem;
+}
+
+.login-form .login-button:hover{
+  background: #4320d4;
+}
+
+.login-container .signup-text {
+  text-align: center;
+  margin: 1.75rem 0 0.31rem;
+  font-weight: 500;
+}
+
+.login-container a{
+  text-decoration: none;
+  color: #5f41e4;
+  font-weight: 500;
+
+}
+
+.login-container a:hover{
+  text-decoration: underline;
+}
