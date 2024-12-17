@@ -13,7 +13,7 @@ const App = () => {
         </button>
       </div>
 
-      <p className="seperator">or</p>
+      <p className="separator"><span>or</span></p>
       <form action="#" className="login-form">
 
          <div className="input-wrapper">
@@ -27,7 +27,7 @@ const App = () => {
           className="input-field"required />
           <i className="material-symbols-rounded">lock</i>
          </div>
-         <a href="#" className="forgot-pass-link">Forgot Password</a>
+         <a href="#" className="forgot-pass-link">Forgot Password?</a>
 
          <button className="login-button">Log In</button>
       </form>
