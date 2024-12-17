@@ -1,34 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="login-container">
+      <h2 className="form-title">Log in with</h2>
+      <div className="social-login">
+        <button className="social-button">
+          <img src="google.svg" alt="Google" className="social-icon" />
+          Google
+        </button> 
+        <button className="social-button">
+          <img src="apple.svg" alt="Apple" className="social-icon" />
+          Apple
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+      <p className="seperator">or</p>
+      <form action="#" className="login-form">
+
+         <div className="input-wrapper">
+          <input type="Email" placeholder="Email address"
+          className="input-field"required />
+          <i className="material-symbols-rounded">mail</i>
+         </div>
+
+         <div className="input-wrapper">
+          <input type="password" placeholder="Password"
+          className="input-field"required />
+          <i className="material-symbols-rounded">lock</i>
+         </div>
+         <a href="#" className="forgot-pass-link">Forgot Password</a>
+
+         <button className="login-button">Log In</button>
+      </form>
+    </div>
   )
 }
 
